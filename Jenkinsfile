@@ -22,7 +22,7 @@ pipeline {
     stage('Deliver') {
       steps {
         input 'Continue or Exit?'
-        sh 'echo \'deliver\''
+        sh 'echo "deliver"'
       }
     }
 
