@@ -19,5 +19,12 @@ pipeline {
       }
     }
 
+    stage('') {
+      steps {
+        input 'continue or exit ?'
+        sh 'echo \'deliver\''
+      }
+    }
+
   }
 }
