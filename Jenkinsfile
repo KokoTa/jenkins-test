@@ -19,10 +19,10 @@ pipeline {
       }
     }
 
-    stage('') {
+    stage('Deliver') {
       steps {
         input 'continue or exit ?'
-        sh 'echo \'deliver\''
+        sh 'echo \'deliver ok\''
       }
     }
 
