@@ -3,12 +3,14 @@ pipeline {
     dockerfile {
       filename 'Dockerfile'
     }
+
   }
   stages {
     stage('Test') {
       steps {
-        sh './test.sh'
+        sh 'docker ps -a'
       }
     }
+
   }
 }
