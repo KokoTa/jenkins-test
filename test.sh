@@ -1,9 +1,9 @@
 ###
  # @Author: KokoTa
  # @Date: 2020-06-09 15:58:06
- # @LastEditTime: 2020-06-10 09:32:36
+ # @LastEditTime: 2020-06-10 09:45:54
  # @Description: 
 ### 
 
-echo 'hello'
-echo 'hello'
+echo 'hello world'
+echo '最后一次测试了，成功了就结束'
