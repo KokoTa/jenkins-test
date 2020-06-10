@@ -4,11 +4,4 @@ pipeline {
       filename 'Dockerfile'
     }
   }
-  stages {
-    stage('Test') {
-      steps {
-        sh './test.sh'
-      }
-    }
-  }
 }
