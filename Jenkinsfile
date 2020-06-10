@@ -21,8 +21,9 @@ pipeline {
 
     stage('Deliver') {
       steps {
-        input 'continue or exit ?'
-        sh 'echo \'deliver ok\''
+        sh '''docker build -t "kokota/ktest" .
+docker login -u kokota -p daixin123
+docker push kokota/ktest'''
       }
     }
 
