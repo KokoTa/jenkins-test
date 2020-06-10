@@ -3,14 +3,12 @@ pipeline {
     dockerfile {
       filename 'Dockerfile'
     }
-
   }
   stages {
-    stage('') {
+    stage('Test') {
       steps {
-        sh 'docker build -t "kokota/ktest" .'
+        sh './test.sh'
       }
     }
-
   }
 }
