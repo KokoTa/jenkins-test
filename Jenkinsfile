@@ -1,28 +1,16 @@
 pipeline {
   agent {
-    docker {
-      image 'node:10-alpine'
-      args '-p 8081:8081'
+    dockerfile {
+      filename 'Dockerfile'
     }
+
   }
   stages {
-    stage('Build') {
+    stage('') {
       steps {
-        sh 'npm install'
+        sh 'docker build -t "kokota/ktest" .'
       }
     }
 
-    stage('Test') {
-      steps {
-        sh './test.sh'
-      }
-    }
-
-    stage('Deliver') {
-      steps {
-        input 'continue or exit ?'
-        sh 'echo \'deliver ok\''
-      }
-    }
   }
 }
